@@ -20,6 +20,9 @@ def visualize_results(report_file):
     plt.xticks(rotation=90)
     plt.tight_layout()
 
+
+# Time took to visualize results was 2 day.
+
     # Adding a summary box
     total_hosts = hosts_df['Host'].nunique()
     total_open_ports = len(hosts_df)
@@ -43,6 +46,9 @@ def visualize_results(report_file):
     plt.gcf().text(0.02, 0.95, f'Total Vulnerabilities: {total_vulnerabilities}', fontsize=12)
 
     plt.savefig('vulnerabilities_per_host.png')
+
+
+# Time took to visualize results was 2 day.
 
     # Plot the protocols analysis
     proto_counts = proto_df['Protocol'].value_counts()
@@ -73,3 +79,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+# Time took to visualize results was 5 day.

@@ -7,6 +7,10 @@ import threading
 
 scanning = True  # Global variable to control the scanning process
 
+
+# Time took to think about flow of the program was 1 day.
+
+
 # Function to scan the network
 def network_scan(network, text_area):
     global scanning
@@ -44,6 +48,10 @@ def network_scan(network, text_area):
     text_area.insert(tk.END, "Network scan completed.\n")
     return hosts_info
 
+
+
+# Time took to do scanning of network was 3 days.
+
 # Function to check for simple vulnerabilities
 def check_vulnerabilities(host_info, text_area):
     global scanning
@@ -67,6 +75,10 @@ def check_vulnerabilities(host_info, text_area):
 
     return vuln_info
 
+
+# Time took to check vulnerabilities was 2 days.
+
+
 # Function to analyze network protocols
 def analyze_protocols(text_area):
     global scanning
@@ -87,6 +99,12 @@ def analyze_protocols(text_area):
 
     text_area.insert(tk.END, "Protocol analysis completed.\n")
     return protocols_info
+
+
+
+# Time took to analyze network protocols was 1 day.
+
+
 
 # Function to generate reports in Excel
 def generate_report(host_info, vuln_info, protocols_info, report_file, text_area):
@@ -122,6 +140,12 @@ def generate_report(host_info, vuln_info, protocols_info, report_file, text_area
 
     writer.close()
     text_area.insert(tk.END, f"Report generated: {report_file}\n")
+
+
+
+# Time took to generate report was 1 day.
+
+
 
 # Function to start the scan
 def start_scan():
@@ -213,3 +237,6 @@ if __name__ == '__main__':
     stop_scan_button.pack(side=tk.RIGHT, padx=10)
 
     root.mainloop()
+
+
+# Time took to run the network security scanner was 7 days.
